@@ -1,0 +1,696 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Childhood Conference 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Childhood from a Multidisciplinary Perspective: Challenges and Opportunities. Mind-IL Israeli Science and Academic Week, Bar-Ilan University, October 26, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* Layout: navy masthead band from the printed program, sticky tab bar, one centered column per tab. */
+:root {
+  --navy: #13285c;
+  --navy-deep: #0c1c45;
+  --sky: #2f8fd8;
+  --sky-soft: #e3effa;
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --fg: #16203a;
+  --muted: #56617a;
+  --line: #d9e1ee;
+  --on-navy: #ffffff;
+  --on-navy-muted: #b9c8e6;
+  --font-display: "Lexend", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --radius: 10px;
+  --wrap: 1040px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #13285c; --navy-deep: #091634; --sky: #6cb6f0; --sky-soft: #172a4a;
+    --bg: #0d1424; --surface: #141d31; --fg: #e6ebf5; --muted: #9aa6bf; --line: #26324b;
+    --on-navy: #ffffff; --on-navy-muted: #b9c8e6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --navy: #13285c; --navy-deep: #091634; --sky: #6cb6f0; --sky-soft: #172a4a;
+  --bg: #0d1424; --surface: #141d31; --fg: #e6ebf5; --muted: #9aa6bf; --line: #26324b;
+  --on-navy: #ffffff; --on-navy-muted: #b9c8e6;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--navy-deep);
+}
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.2; margin: 0; }
+a { color: var(--sky); }
+:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; border-radius: 4px; }
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* Masthead */
+.masthead { background: var(--navy); color: var(--on-navy); }
+.masthead .wrap { padding-block: 2.5rem 2rem; display: grid; gap: 1.25rem; }
+.mast-grid { align-items: center; }
+.mast-text { display: grid; gap: 1.25rem; min-width: 0; }
+.mast-logo { background: #fff; border-radius: 16px; padding: 10px; box-shadow: 0 6px 24px rgba(0,0,0,.18); max-width: 320px; width: 100%; justify-self: center; }
+.mast-logo img { display: block; width: 100%; height: auto; border-radius: 10px; }
+@media (min-width: 860px) { .mast-grid { grid-template-columns: 1fr minmax(260px, 340px); gap: 2.5rem; } .mast-logo { justify-self: end; max-width: none; } }
+@media (max-width: 859px) { .mast-logo { order: -1; max-width: 260px; justify-self: start; } }
+.eyebrow {
+  font-family: var(--font-display); font-size: .8rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--on-navy-muted);
+}
+.masthead h1 { font-size: clamp(2rem, 6vw, 3.4rem); font-weight: 700; letter-spacing: -.01em; }
+.subtitle { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--on-navy-muted); max-width: 40ch; margin: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: .75rem 2rem; margin-top: .5rem; }
+.fact { display: flex; gap: .6rem; align-items: center; }
+.fact svg { flex: none; width: 22px; height: 22px; color: var(--sky); }
+.fact span { display: block; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--on-navy-muted); }
+.fact strong { font-family: var(--font-display); font-weight: 600; }
+
+/* Tabs */
+.tabbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: var(--navy-deep);
+  border-bottom: 3px solid var(--sky);
+}
+.tabs { display: flex; gap: .25rem; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab {
+  flex: none;
+  font-family: var(--font-display); font-size: .95rem; font-weight: 500;
+  color: var(--on-navy-muted); text-decoration: none;
+  padding: .9rem 1rem; border-bottom: 3px solid transparent; margin-bottom: -3px;
+}
+.tab:hover { color: var(--on-navy); }
+.tab[aria-selected="true"] { color: var(--on-navy); border-bottom-color: var(--on-navy); }
+
+/* Panels */
+main .wrap { padding-block: 2.5rem 3.5rem; }
+.panel { display: grid; gap: 1.75rem; }
+.panel-head { display: grid; gap: .4rem; }
+.panel-head h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); color: var(--fg); }
+.panel-head p { margin: 0; color: var(--muted); max-width: 65ch; }
+
+/* Program table */
+.schedule { display: grid; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.slot { display: grid; grid-template-columns: 9.5rem 1fr; border-top: 1px solid var(--line); }
+.slot:first-child { border-top: 0; }
+.time {
+  font-family: var(--font-display); font-weight: 600; font-variant-numeric: tabular-nums;
+  background: var(--navy); color: var(--on-navy); padding: 1rem;
+  display: flex; align-items: center;
+}
+.slot.minor .time { background: var(--sky-soft); color: var(--fg); }
+.session { padding: 1rem 1.25rem; display: flex; gap: .9rem; align-items: flex-start; min-width: 0; }
+.session .ico { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--sky-soft); color: var(--sky); display: grid; place-items: center; }
+.session .ico svg { width: 18px; height: 18px; }
+.session h3 { font-size: 1.05rem; font-weight: 600; }
+.session p { margin: .2rem 0 0; color: var(--muted); }
+.session .role { font-weight: 700; color: var(--fg); }
+.kind { font-family: var(--font-display); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--sky); font-weight: 600; }
+
+/* Cards */
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.25rem; display: grid; gap: .35rem; align-content: start; }
+.card h3 { font-size: 1.05rem; font-weight: 600; }
+.card .inst { color: var(--muted); margin: 0; }
+.abbr { font-family: var(--font-display); font-size: .75rem; font-weight: 600; letter-spacing: .08em; color: var(--sky); }
+
+/* Symposia */
+.symp { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.symp-head { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between; align-items: baseline; }
+.symp-head h3 { font-size: 1.25rem; }
+.symp-time { font-family: var(--font-display); font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 500; }
+.symp-body { padding: 1.25rem 1.5rem; display: grid; gap: 1rem; }
+.panel-overview-link { width: fit-content; color: var(--sky); cursor: pointer; font-family: var(--font-display); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.panel-overview-link:hover { color: var(--fg); }
+.panel-overview p { margin: .6rem 0 0; max-width: 75ch; }
+.mod { margin: 0; }
+.mod b { font-family: var(--font-display); font-weight: 600; }
+.people { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.people li { background: var(--sky-soft); border-radius: 999px; padding: .3rem .85rem; font-size: .95rem; }
+
+/* Posters */
+.poster-session { display: grid; gap: 1rem; }
+.poster-session > header { display: flex; flex-wrap: wrap; gap: .4rem 1rem; align-items: baseline; }
+.poster-session h3 { font-size: 1.25rem; }
+.empty {
+  border: 2px dashed var(--line); border-radius: var(--radius);
+  padding: 1.5rem; color: var(--muted); background: var(--surface);
+}
+.empty p { margin: 0; }
+details.abstract { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+details.abstract summary { cursor: pointer; padding: 1rem 1.25rem; list-style: none; display: grid; gap: .2rem; }
+details.abstract summary::-webkit-details-marker { display: none; }
+details.abstract summary b { font-family: var(--font-display); font-weight: 600; }
+details.abstract summary span { color: var(--muted); font-size: .95rem; }
+details.abstract .abs-text { padding: 0 1.25rem 1.25rem; max-width: 70ch; }
+
+/* Committee photos */
+.member { justify-items: start; gap: .5rem; }
+.member img { width: 104px; height: 104px; border-radius: 50%; object-fit: cover; margin-bottom: .35rem; }
+.member a.home { color: var(--fg); text-decoration: underline; text-decoration-color: var(--sky); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.member a.home:hover { color: var(--sky); }
+.member a.home::after { content: " ↗"; font-size: .8em; color: var(--sky); }
+.who-row { display: inline-flex; align-items: center; gap: .6rem; }
+.face { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: none; border: 2px solid var(--sky-soft); }
+.talk-static .who { color: var(--fg); font-size: .95rem; }
+.talk-static .who em { font-style: normal; color: var(--muted); }
+
+/* Talks inside symposia */
+.talks { display: grid; gap: .6rem; }
+.talks details.abstract { background: var(--bg); }
+.talk-static { padding: .85rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); display: grid; gap: .2rem; }
+.talk-static b { font-family: var(--font-display); font-weight: 600; }
+.talk-static span { color: var(--muted); font-size: .95rem; }
+details.abstract summary .t { font-family: var(--font-display); font-weight: 600; }
+details.abstract summary .who { color: var(--fg); font-size: .95rem; }
+details.abstract summary .who em { font-style: normal; color: var(--muted); }
+details.abstract summary::after { content: "Read abstract"; font-family: var(--font-display); font-size: .78rem; font-weight: 600; color: var(--sky); margin-top: .15rem; }
+details.abstract[open] summary::after { content: "Hide abstract"; }
+details.abstract .abs-text p { margin: 0 0 .7rem; }
+details.abstract .abs-text p:last-child { margin-bottom: 0; }
+.symp-photo { margin: 0; }
+.symp-photo img { display: block; width: 100%; height: auto; border-radius: 10px; }
+.panelists { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.panelists li { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: .65rem .9rem; display: flex; }
+.panelists .pn { display: grid; min-width: 0; }
+.panelists li b { font-family: var(--font-display); font-weight: 600; }
+.panelists li span { color: var(--muted); font-size: .92rem; }
+.panelists a { color: var(--fg); text-decoration: underline; text-decoration-color: var(--sky); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.panelists a:hover { color: var(--sky); }
+.panelists a::after { content: " ↗"; font-size: .8em; color: var(--sky); }
+
+/* Poster search */
+.search { display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center; }
+.search input {
+  flex: 1 1 260px; min-width: 0; font: inherit; color: var(--fg); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: .7rem 1.1rem;
+}
+.search input:focus { outline: 3px solid var(--sky); outline-offset: 1px; }
+.count { color: var(--muted); font-size: .95rem; font-variant-numeric: tabular-nums; }
+.poster-list { display: grid; gap: .6rem; }
+
+/* Awards */
+.award { background: var(--navy); color: var(--on-navy); border: 0; }
+.award h3 { color: var(--on-navy); font-size: 1.15rem; }
+.award p { margin: 0; color: var(--on-navy-muted); }
+.winners { list-style: none; margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(255,255,255,.18); display: grid; gap: 10px; }
+.winners li { display: flex; flex-direction: column; }
+.winners strong { color: var(--on-navy); font-size: 1.05rem; }
+.winners span { color: var(--on-navy-muted); font-size: .9rem; }
+.award svg { width: 28px; height: 28px; color: var(--sky); }
+.note { background: var(--sky-soft); border-radius: var(--radius); padding: 1rem 1.25rem; margin: 0; }
+
+/* Photos */
+.album-cta {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between;
+}
+.album-cta p { margin: 0; max-width: 50ch; }
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--font-display); font-weight: 600; text-decoration: none;
+  background: var(--navy); color: var(--on-navy); padding: .8rem 1.3rem; border-radius: 999px;
+}
+.btn:hover { background: var(--navy-deep); }
+.btn svg { width: 18px; height: 18px; }
+.gallery { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
+.thumb { padding: 0; border: 0; background: var(--sky-soft); border-radius: 8px; cursor: zoom-in; overflow: hidden; display: block; width: 100%; }
+.thumb img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; transition: transform .25s ease; }
+.thumb:hover img { transform: scale(1.03); }
+.gallery-foot { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.gallery-foot .btn { border: 0; cursor: pointer; font-size: 1rem; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 20; background: rgba(6, 12, 28, .94);
+  display: flex; align-items: center; justify-content: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+}
+.lightbox[hidden] { display: none !important; }
+.lightbox figure { margin: 0; display: grid; gap: .6rem; justify-items: center; max-width: 100%; }
+.lightbox img { max-width: min(100%, 1280px); max-height: calc(100vh - 7rem); object-fit: contain; border-radius: 6px; }
+.lightbox figcaption { color: #c9d4ea; font-family: var(--font-display); font-variant-numeric: tabular-nums; font-size: .9rem; }
+.lb-btn {
+  position: absolute; background: rgba(255, 255, 255, .12); color: #fff; border: 0; cursor: pointer;
+  width: 48px; height: 48px; border-radius: 50%; font-size: 2rem; line-height: 1; display: grid; place-items: center;
+}
+.lb-btn:hover { background: rgba(255, 255, 255, .24); }
+.lb-close { top: calc(12px + env(safe-area-inset-top, 0px)); right: calc(12px + env(safe-area-inset-right, 0px)); }
+.lb-prev { left: calc(12px + env(safe-area-inset-left, 0px)); top: 50%; transform: translateY(-50%); }
+.lb-next { right: calc(12px + env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
+
+/* Footer */
+footer { background: var(--navy-deep); color: var(--on-navy-muted); }
+footer .wrap { padding-block: 2rem; display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; justify-content: space-between; font-size: .95rem; }
+footer strong { color: var(--on-navy); font-family: var(--font-display); font-weight: 600; }
+.copy { background: none; border: 1px solid var(--on-navy-muted); color: var(--on-navy); border-radius: 999px; padding: .15rem .7rem; font: inherit; font-size: .8rem; cursor: pointer; margin-left: .4rem; }
+
+@media (max-width: 640px) {
+  .slot { grid-template-columns: 1fr; }
+  .time { padding: .55rem 1rem; }
+  .session { padding: .9rem 1rem 1.1rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .panel { animation: fade .25s ease-out; }
+  @keyframes fade { from { opacity: .4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+}
+</style>
+
+<header class="masthead">
+  <div class="wrap mast-grid">
+    <div class="mast-text">
+    <div class="eyebrow">Mind-IL &middot; Israeli Science and Academic Week</div>
+    <h1>Childhood Conference</h1>
+    <p class="subtitle">Childhood from a Multidisciplinary Perspective: Challenges and Opportunities</p>
+    <div class="facts">
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div><span>Date</span><strong>October 26, 2026</strong></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><span>Location</span><strong>Music Building, Bar-Ilan University, Ramat-Gan</strong></div>
+      </div>
+    </div>
+    </div>
+    <div class="mast-logo"><img src="logo.webp" alt="Childhood Conference: A Multidisciplinary Perspective logo" width="720" height="480"></div>
+  </div>
+</header>
+
+<nav class="tabbar" aria-label="Sections">
+  <div class="wrap tabs" role="tablist">
+    <a class="tab" role="tab" href="#program" data-tab="program">Program</a>
+    <a class="tab" role="tab" href="#committee" data-tab="committee">Organizing Committee</a>
+    <a class="tab" role="tab" href="#symposia" data-tab="symposia">Symposia</a>
+    <a class="tab" role="tab" href="#posters" data-tab="posters">Posters &amp; Abstracts</a>
+    <a class="tab" role="tab" href="#awards" data-tab="awards">Awards</a>
+    <a class="tab" role="tab" href="#photos" data-tab="photos">Photos</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <!-- PROGRAM -->
+    <section class="panel" id="panel-program" role="tabpanel">
+      <div class="panel-head">
+        <h2>Program</h2>
+        <p>A full day of keynotes, symposia, a panel and two poster sessions, ending with the Excellence in Child Research awards ceremony.</p>
+      </div>
+      <div class="schedule" id="schedule"></div>
+    </section>
+
+    <!-- COMMITTEE -->
+    <section class="panel" id="panel-committee" role="tabpanel" hidden>
+      <div class="panel-head">
+        <h2>Organizing Committee</h2>
+        <p>The Childhood Mind-IL Organizing Committee brings together researchers from seven Israeli universities and colleges.</p>
+      </div>
+      <div class="grid" id="committee"></div>
+      <p class="note">Questions about the conference: <strong>childhood.mindil@gmail.com</strong></p>
+    </section>
+
+    <!-- SYMPOSIA -->
+    <section class="panel" id="panel-symposia" role="tabpanel" hidden>
+      <div class="panel-head">
+        <h2>Symposia</h2>
+        <p>The keynote, two symposia, the panel and the closing talk. Select a talk to read its abstract.</p>
+      </div>
+      <div class="panel" id="symposia"></div>
+    </section>
+
+    <!-- POSTERS -->
+    <section class="panel" id="panel-posters" role="tabpanel" hidden>
+      <div class="panel-head">
+        <h2>Posters &amp; Abstracts</h2>
+        <p>89 posters were presented in two sessions. Search by title, presenter, institution or keyword, and select a poster to read its abstract.</p>
+      </div>
+      <div class="search">
+        <label for="poster-search" class="kind">Search posters</label>
+        <input id="poster-search" type="search" placeholder="e.g. reading, EEG, University of Haifa" autocomplete="off">
+        <span class="count" id="poster-count" aria-live="polite"></span>
+      </div>
+      <div class="panel" id="posters"></div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="panel" id="panel-awards" role="tabpanel" hidden>
+      <div class="panel-head">
+        <h2>Excellence in Child Research Awards</h2>
+        <p>The awards were presented at the closing ceremony at 16:30.</p>
+      </div>
+      <div class="grid">
+        <div class="card award">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>
+          <h3>Segol Foundation Award</h3>
+          <p>For doctoral students</p>
+          <ul class="winners"><li><strong>Shir Golan</strong><span>Ben-Gurion University of the Negev</span></li><li><strong>Sharon Pilowski</strong><span>The Hebrew University of Jerusalem</span></li></ul>
+        </div>
+        <div class="card award">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>
+          <h3>Henrietta Szold Award</h3>
+          <p>For research on developmental processes</p>
+          <ul class="winners"><li><strong>Liron Hazan Cohen</strong><span>The Hebrew University of Jerusalem</span></li></ul>
+        </div>
+        <div class="card award">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/></svg>
+          <h3>Liel &amp; Yanai Hetzroni Award</h3>
+          <p>In memory of Liel &amp; Yanai Hetzroni, for clinical-educational care</p>
+          <ul class="winners"><li><strong>Liron Oliver-Aronson</strong><span>Bar-Ilan University</span></li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="panel" id="panel-photos" role="tabpanel" hidden>
+      <div class="panel-head">
+        <h2>Photos</h2>
+        <p>Moments from the Childhood Conference at Bar-Ilan University, October 26, 2026.</p>
+      </div>
+      <div class="album-cta">
+        <p>Select a photo to view it full size. The original high-resolution album is on Google Photos.</p>
+        <a class="btn" id="album-link" target="_blank" rel="noopener">
+          Open in Google Photos
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+        </a>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="gallery-foot">
+        <span class="count" id="gallery-count"></span>
+        <button type="button" class="btn" id="gallery-more">Show more photos</button>
+      </div>
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+        <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close">&times;</button>
+        <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+        <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+        <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Childhood Conference 2026</strong><br>Mind-IL &middot; Israeli Science and Academic Week</div>
+    <div>Contact: <span id="email">childhood.mindil@gmail.com</span><button class="copy" id="copy-email" type="button">Copy</button></div>
+  </div>
+</footer>
+
+<script src="abstracts.js"></script>
+<script>
+/* ---------- Content (edit here) ---------- */
+const ALBUM_URL = "https://photos.google.com/share/AF1QipPnhPrK5hkjIa8kQ2ByiKQceo7NHK4nfm8kR_hO_PLj1C2Z9rEaWce65jDtBYhsBA?key=REJBcm1zVEx6UXNWd1k5UTFVXzVKaVBOYUN1UGpR";
+
+/* Photos downloaded from the album into photos/ (photo-001.webp … photo-300.webp) */
+const PHOTO_COUNT = 300;
+const PHOTOS = Array.from({ length: PHOTO_COUNT }, (_, i) => `photos/photo-${String(i + 1).padStart(3, "0")}.webp`);
+
+const ICONS = {
+  coffee: '<path d="M4 8h13v5a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6V8zM17 9h1.5a2.5 2.5 0 0 1 0 5H17"/>',
+  poster: '<rect x="4" y="3" width="16" height="13" rx="1"/><path d="M8 20l4-4 4 4M8 8h8M8 11h5"/>',
+  people: '<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14 20a4.5 4.5 0 0 1 7-3.7"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
+  lunch: '<path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/>',
+  trophy: '<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/>'
+};
+
+const SCHEDULE = [
+  { time: "08:00 – 08:30", icon: "coffee", title: "Gathering, Coffee", minor: true },
+  { time: "08:30 – 09:30", icon: "poster", title: "Poster Session A: Developmental Processes" },
+  { time: "09:30 – 09:45", icon: "people", title: "Greetings",
+    lines: ["Bar-Ilan University Rector, Prof. Cyrille Cohen", "Dean of Social Sciences, Prof. Galit Nahari"] },
+  { time: "09:45 – 10:15", icon: "mic", kind: "Keynote", title: "Prof. Noa Ofen",
+    lines: ["The University of Texas at Dallas, USA"] },
+  { time: "10:15 – 11:30", icon: "people", title: "Symposium: Opportunities and Challenges",
+    role: "Moderator", lead: "Dr. Tahli Frenkel",
+    lines: ["Prof. Assaf Oshri, Prof. Idan Shalev, Prof. Naama Gershy-Tsahor, Prof. Ariel Knafo-Noam, Prof. Florina Uzefovsky, Prof. Gil Diesendruck"] },
+  { time: "11:30 – 12:00", icon: "coffee", title: "Coffee break", minor: true },
+  { time: "12:00 – 13:00", icon: "people", title: "Panel: In the Eye of the Storm",
+    role: "Moderator", lead: "Prof. Tzipi Horowitz-Kraus",
+    lines: ["Panelists: Prof. Carmit Katz, Prof. Miri Keren, Prof. Naama Atzaba-Poria, Prof. Mario Mikulincer, Ms. Naama Kroyzer, Dr. Noa Vardi"] },
+  { time: "13:00 – 14:00", icon: "lunch", title: "Lunch and Poster Session B: Multidisciplinary Care" },
+  { time: "14:00 – 15:15", icon: "people", title: "Learning Symposium",
+    role: "Moderator", lead: "Prof. Daphna Ginio Dollberg",
+    lines: ["Prof. Shari DeVeney, Prof. Ofer Harel, Prof. Sigal Eden, Dr. Adi Korisky, Dr. Maor Yeshua, Prof. Aram Ayalon"] },
+  { time: "15:15 – 15:45", icon: "coffee", title: "Coffee break", minor: true },
+  { time: "15:45 – 16:15", icon: "mic", kind: "Closing talk", title: "Prof. Ronny Geva" },
+  { time: "16:30", icon: "trophy", title: "Excellence in Child Research: Closing ceremony",
+    lines: ["Segol Foundation, Henrietta Szold, In memory of Liel & Yanai Hetzroni Awards",
+            "Group photo of all participants and transportation to the Mind-IL closing event"] }
+];
+
+const COMMITTEE = [
+  { name: "Ronny Geva", abbr: "BIU", inst: "Bar-Ilan University", photo: "committee/geva.webp", url: "https://sites.biu.ac.il/en/ronny-geva" },
+  { name: "Tzipi Horowitz-Kraus", abbr: "Technion", inst: "Technion – Israel Institute of Technology", photo: "committee/horowitz-kraus.webp", url: "https://neuroimaging-center.technion.ac.il/" },
+  { name: "Reout Arbel", abbr: "UH", inst: "University of Haifa", photo: "committee/arbel.webp", url: "https://cris.haifa.ac.il/en/persons/reout-arbel/" },
+  { name: "Daphna Ginio Dollberg", abbr: "MTA", inst: "The Academic College of Tel Aviv-Yaffo", photo: "committee/ginio-dollberg.webp", url: "https://www.int.mta.ac.il/faculty-members/prof.-ginio-dollberg-daphna" },
+  { name: "Efrat Sher-Censor", abbr: "UH", inst: "University of Haifa", photo: "committee/sher-censor.webp", url: "https://cris.haifa.ac.il/en/persons/efrat-sher-censor/" },
+  { name: "Shir Atzil", abbr: "HUJI", inst: "The Hebrew University of Jerusalem", photo: "committee/atzil.webp", url: "https://scholars.huji.ac.il/jbc/node/1369" },
+  { name: "Naama Atzaba-Poria", abbr: "BGU", inst: "Ben-Gurion University of the Negev", photo: "committee/atzaba-poria.webp", url: "https://www.bgu.ac.il/en/people/nap/" },
+  { name: "Tahli Frenkel", abbr: "Reichman", inst: "Reichman University", photo: "committee/frenkel.webp", url: "https://www.runi.ac.il/en/faculty/ftahl" },
+  { name: "Anat Prior", abbr: "UH", inst: "University of Haifa", photo: "committee/prior.webp", url: "https://langnum.haifa.ac.il/EPrior.php" },
+  { name: "Sagi Jaffe-Dax", abbr: "TAU", inst: "Tel Aviv University", photo: "committee/jaffe-dax.webp", url: "https://en-social-sciences.tau.ac.il/profile/jaffedax" }
+];
+
+/* Speaker portraits: official university/profile photos (speakers/), committee photos for organizers */
+const SPEAKER_PHOTOS = {
+  "Noa Ofen": "speakers/ofen.webp",
+  "Assaf Oshri": "speakers/oshri.webp",
+  "Idan Shalev": "speakers/shalev.webp",
+  "Florina Uzefovsky": "speakers/uzefovsky.webp",
+  "Gil Diesendruck": "speakers/diesendruck.webp",
+  "Carmit Katz": "speakers/katz.webp",
+  "Miri Keren": "speakers/keren.webp",
+  "Mario Mikulincer": "speakers/mikulincer.webp",
+  "Shari DeVeney": "speakers/deveney.webp",
+  "Ofer Harel": "speakers/harel.webp",
+  "Sigal Eden": "speakers/eden.webp",
+  "Adi Korisky": "speakers/korisky.webp",
+  "Naama Gershy-Tsahor": "speakers/gershy-tsahor.webp",
+  "Ariel Knafo-Noam": "speakers/knafo-noam.webp",
+  "Naama Kroyzer": "speakers/kroyzer.webp",
+  "Noa Vardi": "speakers/vardi.webp",
+  "Maor Yeshua": "speakers/yeshua.webp",
+  "Aram Ayalon": "speakers/ayalon.webp",
+  "Ronny Geva": "committee/geva.webp",
+  "Naama Atzaba-Poria": "committee/atzaba-poria.webp",
+  "Tahli Frenkel": "committee/frenkel.webp",
+  "Tzipi Horowitz-Kraus": "committee/horowitz-kraus.webp",
+  "Daphna Ginio Dollberg": "committee/ginio-dollberg.webp"
+};
+const faceFor = name => SPEAKER_PHOTOS[String(name).replace(/^(Prof\.|Dr\.|Ms\.|Mr\.)\s+/, "")];
+const faceImg = name => {
+  const src = faceFor(name);
+  return src ? `<img class="face" src="${esc(src)}" alt="${esc(String(name).replace(/^(Prof\.|Dr\.|Ms\.|Mr\.)\s+/, ""))}" width="40" height="40" loading="lazy">` : "";
+};
+
+/* Talks and posters (titles, presenters, abstracts) come from abstracts.js */
+const DATA = window.CONF_DATA || { talks: {}, posters: {} };
+
+const SYMPOSIA = [
+  { key: "Keynote", title: "Keynote", time: "09:45 – 10:15" },
+  { key: "Symposium: Opportunities and Challenges", title: "Symposium: Opportunities and Challenges", time: "10:15 – 11:30",
+    role: "Moderator", lead: "Dr. Tahli Frenkel" },
+  { key: "Panel", title: "Panel: In the Eye of the Storm", time: "12:00 – 13:00", photo: "panel.webp",
+    role: "Moderator", lead: "Prof. Tzipi Horowitz-Kraus",
+    abstract: "Moderated by Prof. Tzipi Horowitz-Kraus, this panel brought together experts in developmental psychology, infant and child psychiatry, social work, and attachment research: Prof. Carmit Katz, Prof. Miri Keren, Prof. Naama Atzaba-Poria, Prof. Mario Mikulincer, Ms. Naama Kroyzer, and Dr. Noa Vardi. The discussion looked at how prolonged war and collective trauma in Israel had shaped children’s emotional, cognitive, and brain development, from infancy through adolescence. A central theme was that attachment works on more than one level: between parent and child, and between professional caregivers and parents. Panelists talked about how professionals could support parents under strain, so that parents could in turn give their children a secure base. They also covered what had helped some children cope better than others, and how research could guide interventions in clinics, schools, and communities. The panel closed with a call to work together across disciplines to support children and families, both right away and in the long term.",
+    panelists: [
+      ["Prof. Carmit Katz", "Bob Shapell School of Social Work, Tel Aviv University", "https://www.tau.ac.il/profile/carmitkatz"],
+      ["Prof. Miri Keren", "Azrieli Faculty of Medicine, Bar-Ilan University", "https://medicine.biu.ac.il/en/node/7553"],
+      ["Prof. Naama Atzaba-Poria", "Ben-Gurion University of the Negev", "https://cris.bgu.ac.il/en/persons/naama-atzaba-poria/"],
+      ["Prof. Mario Mikulincer", "The Hebrew University of Jerusalem", "https://www.runi.ac.il/en/research-institutes/psychology/technology-and-mental-health-hub/faculty"],
+      ["Ms. Naama Kroyzer", "", "https://www.researchgate.net/profile/Naama-Kroyzer-2"],
+      ["Dr. Noa Vardi", "Specialist in Child and Adolescent Psychiatry", "https://il.linkedin.com/in/noa-vardi-shapira-640358ab"]
+    ] },
+  { key: "Learning Symposium", title: "Learning Symposium", time: "14:00 – 15:15",
+    role: "Moderator", lead: "Prof. Daphna Ginio Dollberg" },
+  { key: "Closing talk", title: "Closing talk", time: "15:45 – 16:15" }
+];
+
+const POSTER_SESSIONS = [
+  { key: "Poster Session A: Developmental Processes", time: "08:30 – 09:30" },
+  { key: "Poster Session B: Multidisciplinary Care", time: "13:00 – 14:00" }
+];
+
+/* ---------- Rendering ---------- */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const svg = name => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
+
+document.getElementById("schedule").innerHTML = SCHEDULE.map(s => `
+  <div class="slot${s.minor ? " minor" : ""}">
+    <div class="time">${esc(s.time)}</div>
+    <div class="session">
+      <div class="ico">${svg(s.icon)}</div>
+      <div>
+        ${s.kind ? `<div class="kind">${esc(s.kind)}</div>` : ""}
+        <h3>${esc(s.title)}</h3>
+        ${s.lead ? `<p><span class="role">${esc(s.role)}:</span> ${esc(s.lead)}</p>` : ""}
+        ${(s.lines || []).map(l => `<p>${esc(l)}</p>`).join("")}
+      </div>
+    </div>
+  </div>`).join("");
+
+document.getElementById("committee").innerHTML = COMMITTEE.map(m => `
+  <div class="card member">
+    <img src="${esc(m.photo)}" alt="${esc(m.name)}" width="104" height="104" loading="lazy">
+    <div class="abbr">${esc(m.abbr)}</div>
+    <h3><a class="home" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.name)}</a></h3>
+    <p class="inst">${esc(m.inst)}</p>
+  </div>`).join("");
+
+/* One talk or poster: expandable when it has an abstract */
+function item(p) {
+  const who = `<span class="who-row">${faceImg(p.author)}<span>${esc(p.author)}${p.affiliation ? ` <em>· ${esc(p.affiliation)}</em>` : ""}</span></span>`;
+  if (!p.abstract || !p.abstract.length) {
+    return `<div class="talk-static">${p.title ? `<b>${esc(p.title)}</b>` : ""}<span class="who">${who}</span></div>`;
+  }
+  return `<details class="abstract">
+    <summary><span class="t">${esc(p.title)}</span><span class="who">${who}</span></summary>
+    <div class="abs-text">${p.abstract.map(t => `<p>${esc(t)}</p>`).join("")}</div>
+  </details>`;
+}
+
+document.getElementById("symposia").innerHTML = SYMPOSIA.map(s => {
+  const talks = DATA.talks[s.key] || [];
+  return `
+  <article class="symp">
+    <div class="symp-head"><h3>${esc(s.title)}</h3><span class="symp-time">${esc(s.time)}</span></div>
+    <div class="symp-body">
+      ${s.photo ? `<figure class="symp-photo"><img src="${esc(s.photo)}" alt="The panel on stage at the conference" loading="lazy" width="1400" height="788"></figure>` : ""}
+      ${s.abstract ? `<a class="panel-overview-link" href="#panel-overview" aria-controls="panel-overview" aria-expanded="false">OVERVIEW</a><div class="panel-overview" id="panel-overview" hidden><p>${esc(s.abstract)}</p></div>` : ""}
+      ${s.lead ? `<p class="mod who-row">${faceImg(s.lead)}<span><b>${esc(s.role)}:</b> ${esc(s.lead)}</span></p>` : ""}
+      ${s.panelists ? `<div><div class="kind" style="margin-bottom:.5rem">Panelists</div>
+        <ul class="panelists">${s.panelists.map(([n, a, url]) => `<li class="who-row">${faceImg(n)}<span class="pn"><b>${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a>` : esc(n)}</b>${a ? `<span>${esc(a)}</span>` : ""}</span></li>`).join("")}</ul></div>` : ""}
+      ${talks.length ? `<div class="talks">${talks.map(item).join("")}</div>` : ""}
+    </div>
+  </article>`;
+}).join("");
+document.querySelectorAll(".panel-overview-link").forEach(link => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+    const overview = document.getElementById(link.getAttribute("aria-controls"));
+    const expanded = link.getAttribute("aria-expanded") === "true";
+    overview.hidden = expanded;
+    link.setAttribute("aria-expanded", String(!expanded));
+  });
+});
+
+/* Posters with search */
+const postersEl = document.getElementById("posters");
+const searchEl = document.getElementById("poster-search");
+const countEl = document.getElementById("poster-count");
+const total = POSTER_SESSIONS.reduce((n, s) => n + (DATA.posters[s.key] || []).length, 0);
+function renderPosters() {
+  const q = searchEl.value.trim().toLowerCase();
+  const match = p => !q || [p.title, p.author, p.affiliation, ...(p.abstract || [])].join(" ").toLowerCase().includes(q);
+  let shown = 0;
+  postersEl.innerHTML = POSTER_SESSIONS.map(s => {
+    const all = DATA.posters[s.key] || [];
+    const list = all.filter(match);
+    shown += list.length;
+    return `
+    <section class="poster-session">
+      <header><h3>${esc(s.key)}</h3><span class="symp-time">${esc(s.time)} · ${q ? `${list.length} of ${all.length}` : all.length} posters</span></header>
+      ${list.length ? `<div class="poster-list">${list.map(item).join("")}</div>`
+        : `<div class="empty"><p>${all.length ? "No posters in this session match your search." : "The posters for this session will be posted here soon."}</p></div>`}
+    </section>`;
+  }).join("");
+  countEl.textContent = q ? `${shown} of ${total} posters match` : `${total} posters`;
+}
+searchEl.addEventListener("input", renderPosters);
+renderPosters();
+
+document.getElementById("album-link").href = ALBUM_URL;
+
+/* Gallery: batches of 48, lightbox with keyboard and arrow navigation */
+const galleryEl = document.getElementById("gallery");
+const moreBtn = document.getElementById("gallery-more");
+const galleryCount = document.getElementById("gallery-count");
+const BATCH = 48;
+let shownPhotos = 0;
+function addPhotos() {
+  const next = PHOTOS.slice(shownPhotos, shownPhotos + BATCH);
+  galleryEl.insertAdjacentHTML("beforeend", next.map((src, k) => {
+    const i = shownPhotos + k;
+    return `<button type="button" class="thumb" data-i="${i}" aria-label="Open photo ${i + 1} of ${PHOTOS.length}">
+      <img src="${esc(src)}" alt="Childhood Conference photo ${i + 1}" loading="lazy" decoding="async"></button>`;
+  }).join(""));
+  shownPhotos += next.length;
+  galleryCount.textContent = `Showing ${shownPhotos} of ${PHOTOS.length} photos`;
+  moreBtn.hidden = shownPhotos >= PHOTOS.length;
+}
+moreBtn.addEventListener("click", addPhotos);
+addPhotos();
+
+const lb = document.getElementById("lightbox");
+const lbImg = document.getElementById("lb-img");
+const lbCap = document.getElementById("lb-cap");
+let lbIndex = 0;
+function openLb(i) {
+  lbIndex = (i + PHOTOS.length) % PHOTOS.length;
+  lbImg.src = PHOTOS[lbIndex];
+  lbImg.alt = `Childhood Conference photo ${lbIndex + 1}`;
+  lbCap.textContent = `${lbIndex + 1} / ${PHOTOS.length}`;
+  if (lb.hidden) { lb.hidden = false; document.body.style.overflow = "hidden"; document.getElementById("lb-close").focus(); }
+}
+function closeLb() { lb.hidden = true; lbImg.removeAttribute("src"); document.body.style.overflow = ""; }
+galleryEl.addEventListener("click", e => { const b = e.target.closest(".thumb"); if (b) openLb(+b.dataset.i); });
+document.getElementById("lb-close").addEventListener("click", closeLb);
+document.getElementById("lb-prev").addEventListener("click", () => openLb(lbIndex - 1));
+document.getElementById("lb-next").addEventListener("click", () => openLb(lbIndex + 1));
+lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+document.addEventListener("keydown", e => {
+  if (lb.hidden) return;
+  if (e.key === "Escape") closeLb();
+  if (e.key === "ArrowLeft") openLb(lbIndex - 1);
+  if (e.key === "ArrowRight") openLb(lbIndex + 1);
+});
+
+/* ---------- Tabs (hash routing) ---------- */
+const TABS = ["program", "committee", "symposia", "posters", "awards", "photos"];
+function show() {
+  const id = location.hash.slice(1);
+  const current = TABS.includes(id) ? id : "program";
+  TABS.forEach(t => {
+    document.getElementById("panel-" + t).hidden = t !== current;
+    const tab = document.querySelector(`[data-tab="${t}"]`);
+    tab.setAttribute("aria-selected", t === current ? "true" : "false");
+    if (t === current) tab.scrollIntoView({ block: "nearest", inline: "nearest" });
+  });
+}
+window.addEventListener("hashchange", () => { show(); window.scrollTo({ top: 0 }); });
+show();
+
+/* ---------- Copy email ---------- */
+document.getElementById("copy-email").addEventListener("click", e => {
+  const text = document.getElementById("email").textContent;
+  const btn = e.currentTarget;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = "Copied";
+    setTimeout(() => (btn.textContent = "Copy"), 1500);
+  }).catch(() => {
+    const r = document.createRange();
+    r.selectNodeContents(document.getElementById("email"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+  });
+});
+</script>
+
+</body></html>
